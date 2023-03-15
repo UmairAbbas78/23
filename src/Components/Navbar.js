@@ -33,14 +33,12 @@ function Navbar() {
           onClick={handleNav}
         />
         <div className="shortcuts">
-          <ScrollLink>
-            <MUILink
-              className="nav-link"
-              sx={{ textDecorationLine: "none", color: "black" }}
-            >
-              About Me
-            </MUILink>
-          </ScrollLink>
+          <MUILink
+            className="nav-link"
+            sx={{ textDecorationLine: "none", color: "black" }}
+          >
+            About Me
+          </MUILink>
           <MUILink
             className="nav-link"
             sx={{ textDecorationLine: "none", color: "black" }}
