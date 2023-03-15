@@ -9,7 +9,6 @@ import {
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
-import { Link as ScrollLink } from "react-scroll";
 
 function Navbar() {
   const [navActive, setNavActive] = React.useState("");
@@ -36,20 +35,20 @@ function Navbar() {
         <div className="shortcuts">
           <ScrollLink>
             <MUILink
-              className="nav-MUILink"
+              className="nav-link"
               sx={{ textDecorationLine: "none", color: "black" }}
             >
               About Me
             </MUILink>
           </ScrollLink>
           <MUILink
-            className="nav-MUILink"
+            className="nav-link"
             sx={{ textDecorationLine: "none", color: "black" }}
           >
             Projects
           </MUILink>
           <MUILink
-            className="nav-MUILink"
+            className="nav-link"
             sx={{ textDecorationLine: "none", color: "black" }}
           >
             Contact
