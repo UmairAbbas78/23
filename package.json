@@ -1,6 +1,7 @@
 {
   "name": "portfolio23",
   "version": "0.1.0",
+  "homepage": "https://umairabbas78.github.io/umairabbasportfolio23/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
