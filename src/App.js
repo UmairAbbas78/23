@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 import Navbar from "./Components/Navbar";
 import { Container } from "@mui/system";
 import Display from "./Images/Display.svg";
+import Projects from "./Components/Projects";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Typography
           sx={{
             color: "rgb(63, 62, 62)",
-            marginTop: "1em",
+            marginTop: "2em",
             "@media screen and (min-width:700px)": {
               fontSize: "28px",
             },
@@ -30,7 +31,7 @@ function App() {
       </Container>
       <hr />
 
-      <Container className="aboutme">
+      <Container className="aboutme" id="aboutme">
         <Typography sx={{ color: "#6c0faa", marginTop: "1em" }} variant="h3">
           I'm Umair
         </Typography>
@@ -44,7 +45,7 @@ function App() {
         >
           A Front-end Developer from Karachi Pakistan. 📍
           <br />
-          I'm Computer Engineering graduated from FAST-NUCES Karachi.📖
+          I'm Computer Engineering graduate from FAST-NUCES Karachi.📖
         </Typography>
         <div className="socials">
           <a
@@ -59,12 +60,12 @@ function App() {
             href="https://www.linkedin.com/in/umair-abbas-aa58a3214/"
             target="_blank"
           >
-            {" "}
             <i className="fa-brands fa-linkedin"></i>
           </a>
         </div>
         <div className="techstack"></div>
       </Container>
+      <Projects />
     </div>
   );
 }

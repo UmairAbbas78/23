@@ -9,6 +9,7 @@ import {
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
+import { Link as ScrollLink } from "react-scroll";
 
 function Navbar() {
   const [navActive, setNavActive] = React.useState("");
@@ -33,44 +34,98 @@ function Navbar() {
           onClick={handleNav}
         />
         <div className="shortcuts">
-          <MUILink
-            className="nav-link"
-            sx={{ textDecorationLine: "none", color: "black" }}
+          <ScrollLink
+            to="aboutme"
+            smooth={true}
+            offset={100}
+            duration={500}
+            spy={true}
           >
-            About Me
-          </MUILink>
-          <MUILink
-            className="nav-link"
-            sx={{ textDecorationLine: "none", color: "black" }}
+            <MUILink
+              className="nav-link"
+              sx={{ textDecorationLine: "none", color: "black" }}
+            >
+              About Me
+            </MUILink>
+          </ScrollLink>
+          <ScrollLink
+            to="projects"
+            smooth={true}
+            offset={10}
+            duration={500}
+            spy={true}
           >
-            Projects
-          </MUILink>
-          <MUILink
-            className="nav-link"
-            sx={{ textDecorationLine: "none", color: "black" }}
+            <MUILink
+              className="nav-link"
+              sx={{ textDecorationLine: "none", color: "black" }}
+            >
+              Projects
+            </MUILink>
+          </ScrollLink>
+          <ScrollLink
+            to="contact"
+            smooth={true}
+            offset={100}
+            duration={500}
+            spy={true}
           >
-            Contact
-          </MUILink>
+            <MUILink
+              className="nav-link"
+              sx={{ textDecorationLine: "none", color: "black" }}
+            >
+              Contact
+            </MUILink>
+          </ScrollLink>
           <Button variant="outlined">Resume</Button>
         </div>
       </div>
       <div className={navActive ? "nav-active" : "nav-disable"}>
         <List>
-          <ListItem>
-            <Typography sx={{ fontWeight: 500, fontSize: 18 }}>
-              About Me
-            </Typography>
-          </ListItem>
-          <ListItem>
-            <Typography sx={{ fontWeight: 500, fontSize: 18 }}>
-              Projects
-            </Typography>
-          </ListItem>
-          <ListItem>
-            <Typography sx={{ fontWeight: 500, fontSize: 18 }}>
-              Contact
-            </Typography>
-          </ListItem>
+          <ScrollLink
+            to="aboutme"
+            smooth={true}
+            offset={10}
+            duration={500}
+            spy={true}
+          >
+            <ListItem>
+              <Typography
+                sx={{ fontWeight: 500, fontSize: 18, color: "white" }}
+              >
+                About Me
+              </Typography>
+            </ListItem>
+          </ScrollLink>
+          <ScrollLink
+            to="projects"
+            smooth={true}
+            offset={100}
+            duration={500}
+            spy={true}
+          >
+            <ListItem>
+              <Typography
+                sx={{ fontWeight: 500, fontSize: 18, color: "white" }}
+              >
+                Projects
+              </Typography>
+            </ListItem>
+          </ScrollLink>
+          <ScrollLink
+            to="contact"
+            smooth={true}
+            offset={100}
+            duration={500}
+            spy={true}
+          >
+            <ListItem>
+              <Typography
+                sx={{ fontWeight: 500, fontSize: 18, color: "white" }}
+              >
+                Contact
+              </Typography>
+            </ListItem>
+          </ScrollLink>
         </List>
       </div>
     </>

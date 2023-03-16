@@ -76,6 +76,18 @@
 
 .aboutme{
   text-align: center;
+  margin-top:5em;
+  margin-bottom: 5em;
+}
+
+.nav-back{
+  background-color: aqua;
+}
+
+.project-container{
+  width: 100%;
+  background-color: #6c0faa;
+  padding: 10px 0px;
 }
 
 .nav-link:hover{
@@ -119,6 +131,14 @@ a{
 }
 
 @media (width > 700px) {
+
+  
+.project-container{
+  width: auto;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 50%, #6c0faa 50%);
+  padding: 10px 30px;
+  border-top: #6c0faa 5px dashed;
+}
   
 .aboutme{
   text-align: center;
