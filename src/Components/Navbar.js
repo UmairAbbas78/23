@@ -1,4 +1,3 @@
-import { Container } from "@mui/system";
 import {
   Typography,
   List,
@@ -10,6 +9,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 import { Link as ScrollLink } from "react-scroll";
+import Resume from "../Resume/Resume_UmairAbbas_23.pdf";
 
 function Navbar() {
   const [navActive, setNavActive] = React.useState("");
@@ -37,7 +37,7 @@ function Navbar() {
           <ScrollLink
             to="aboutme"
             smooth={true}
-            offset={100}
+            offset={-180}
             duration={500}
             spy={true}
           >
@@ -51,7 +51,7 @@ function Navbar() {
           <ScrollLink
             to="projects"
             smooth={true}
-            offset={10}
+            offset={-180}
             duration={500}
             spy={true}
           >
@@ -76,33 +76,21 @@ function Navbar() {
               Contact
             </MUILink>
           </ScrollLink>
-          <Button variant="outlined">Resume</Button>
+          <a href={Resume} target="_blank" rel="noreferrer">
+            <Button variant="outlined">Resume</Button>
+          </a>
         </div>
       </div>
       <div className={navActive ? "nav-active" : "nav-disable"}>
         <List>
-          <ScrollLink
-            to="aboutme"
-            smooth={true}
-            offset={10}
-            duration={500}
-            spy={true}
-          >
+          <ScrollLink to="aboutme" offset={-190} spy={false} smooth={true}>
             <ListItem>
-              <Typography
-                sx={{ fontWeight: 500, fontSize: 18, color: "white" }}
-              >
+              <Typography sx={{ fontWeight: 500, fontSize: 18 }}>
                 About Me
               </Typography>
             </ListItem>
           </ScrollLink>
-          <ScrollLink
-            to="projects"
-            smooth={true}
-            offset={100}
-            duration={500}
-            spy={true}
-          >
+          <ScrollLink to="projects" offset={-80} smooth={true}>
             <ListItem>
               <Typography
                 sx={{ fontWeight: 500, fontSize: 18, color: "white" }}
@@ -111,13 +99,7 @@ function Navbar() {
               </Typography>
             </ListItem>
           </ScrollLink>
-          <ScrollLink
-            to="contact"
-            smooth={true}
-            offset={100}
-            duration={500}
-            spy={true}
-          >
+          <ScrollLink to="contact" smooth={true}>
             <ListItem>
               <Typography
                 sx={{ fontWeight: 500, fontSize: 18, color: "white" }}
@@ -126,6 +108,18 @@ function Navbar() {
               </Typography>
             </ListItem>
           </ScrollLink>
+          <a href={Resume} target="_blank" rel="noreferrer">
+            <Button
+              variant="contained"
+              sx={{
+                backgroundColor: "white",
+                color: "#6c0faa",
+                marginLeft: "0.5em",
+              }}
+            >
+              Resume
+            </Button>
+          </a>
         </List>
       </div>
     </>
