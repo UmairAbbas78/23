@@ -24,11 +24,9 @@ function Projects() {
       </Typography>
       <ProjectLeft
         animClass="project-image-1"
-        description="This is my Final Year Project. I made a MERN stack app that monitors
-          power generations and all Take-off units of that power, And then all
-          the data is displayed in real-time with the use of intuitive graphs
-          that I made using recharts Library."
-        title="Energy Generation and Take-offs Monitoring System"
+        title="Energy Generation and Take-Offs Monitoring App"
+        description="For my Final Year Project, I developed a MERN stack app to monitor power generation and Take-off units. I utilized the recharts library to create real-time graphs for easy analysis. This project reflects my knowledge and skills in web development and data visualization and I am grateful for the opportunity to showcase it."
+        liveLink="https://artisticems.netlify.app/"
       />
     </div>
   );

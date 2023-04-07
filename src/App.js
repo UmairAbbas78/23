@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Container className="main">
+      <Container className="main" id="main">
         <Typography sx={{ marginBottom: "1em", color: "#6c0faa" }} variant="h3">
           Designer & Front-end Developer.
         </Typography>
@@ -54,6 +54,7 @@ function App() {
             target="_blank"
           >
             <i className="fa-brands fa-square-github"></i>
+            <Typography>Git</Typography>
           </a>
           <a
             id="profile-link"
@@ -61,6 +62,7 @@ function App() {
             target="_blank"
           >
             <i className="fa-brands fa-linkedin"></i>
+            <Typography>Linkedin</Typography>
           </a>
         </div>
         <div className="techstack"></div>

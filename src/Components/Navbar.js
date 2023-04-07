@@ -21,13 +21,15 @@ function Navbar() {
   return (
     <>
       <div className="nav-bar">
-        <Typography
-          className="web-title"
-          variant="h6"
-          sx={{ color: "#6c0faa" }}
-        >
-          Umair Abbas.
-        </Typography>
+        <ScrollLink to="main" smooth={true} offset={-100}>
+          <Typography
+            className="web-title"
+            variant="h6"
+            sx={{ color: "#6c0faa", cursor: "pointer" }}
+          >
+            Umair Abbas.
+          </Typography>
+        </ScrollLink>
         <FontAwesomeIcon
           className="nav-icon"
           icon={navActive ? faBarsStaggered : faBars}
