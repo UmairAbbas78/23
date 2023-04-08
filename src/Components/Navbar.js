@@ -53,7 +53,7 @@ function Navbar() {
           <ScrollLink
             to="projects"
             smooth={true}
-            offset={-180}
+            offset={-50}
             duration={500}
             spy={true}
           >

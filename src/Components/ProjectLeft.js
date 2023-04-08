@@ -5,7 +5,12 @@ function ProjectLeft(props) {
   return (
     <Paper
       elevation={10}
-      sx={{ padding: "2em", border: "solid #6c0faa 5px", borderRadius: "10px" }}
+      sx={{
+        padding: "2em",
+        border: "solid #6c0faa 5px",
+        borderRadius: "10px",
+        marginTop: "1em",
+      }}
       className="project-left-container"
     >
       <div className={"project-text"}>

@@ -2,7 +2,6 @@ import "./App.css";
 import { Typography } from "@mui/material";
 import Navbar from "./Components/Navbar";
 import { Container } from "@mui/system";
-import Display from "./Images/Display.svg";
 import Projects from "./Components/Projects";
 
 function App() {
@@ -25,7 +24,7 @@ function App() {
           }}
           variant="h6"
         >
-          I love designing and creating user-friendly and creative web
+          I love designing and developing user-friendly and creative web
           experiences.
         </Typography>
       </Container>
@@ -46,12 +45,17 @@ function App() {
           A Front-end Developer from Karachi Pakistan. 📍
           <br />
           I'm Computer Engineering graduate from FAST-NUCES Karachi.📖
+          <br />
+          I'm an aspiring MERN Stack developer with a passion for software
+          engineering and a strong foundation in programming principles. I'm a
+          Hobbyist game developer, and I also have a knack for UI/UX design.
         </Typography>
         <div className="socials">
           <a
             id="profile-link"
             href="https://github.com/UmairAbbas78"
             target="_blank"
+            rel="noreferrer"
           >
             <i className="fa-brands fa-square-github"></i>
             <Typography>Git</Typography>
@@ -60,6 +64,7 @@ function App() {
             id="profile-link"
             href="https://www.linkedin.com/in/umair-abbas-aa58a3214/"
             target="_blank"
+            rel="noreferrer"
           >
             <i className="fa-brands fa-linkedin"></i>
             <Typography>Linkedin</Typography>

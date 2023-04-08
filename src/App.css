@@ -102,6 +102,18 @@
   background-repeat: no-repeat;
   animation: project-scroll 20s infinite;
 }
+.project-image-2{
+  background-image: url('./Images/Projects/2/MarkDown_full.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: project-scroll-2 25s infinite;
+}
+.project-image-3{
+  background-image: url('./Images/Projects/2/MarkDown_full.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: project-scroll-3 20s infinite;
+}
 .project-text{
   width: 100%;
 }
@@ -154,6 +166,60 @@ a{
   100%{
     background-image: url('./Images/Projects/1/Project3.jpg');
     background-position: 100%;
+  }
+}
+@keyframes project-scroll-2 {
+  0%{
+    background-image: url('./Images/Projects/2/MarkDown_full.png');
+    background-position: 0%;
+  }
+  30%{
+    background-image: url('./Images/Projects/2/MarkDown_full.png');
+    background-position: 50%;
+  }
+  40%{
+    background-image: url('./Images/Projects/2/MarkDown_write.png');    
+    background-position: 0%;
+  }
+  70%{
+    background-image: url('./Images/Projects/2/MarkDown_write.png');    
+    background-position: 100%;
+  }
+  80%{
+    background-image: url('./Images/Projects/2/MarkDown_render.png');
+    background-position: 0%;
+  }
+  100%{
+    background-image: url('./Images/Projects/2/MarkDown_render.png');
+    background-position: 100%;
+  }
+}
+@keyframes project-scroll-3 {
+  0%{
+    background-image: url('./Images/Projects/3/Full.png');
+    background-position: 0%;
+  }
+  30%{
+    background-image: url('./Images/Projects/3/Full.png');
+    background-position: 5%;
+  }
+  40%{
+    background-image: url('./Images/Projects/3/Quote.png');    
+    background-position: 0%;
+  }
+  70%{
+    background-image: url('./Images/Projects/3/Quote.png');    
+    background-position: 10%;
+  }
+  80%{
+    background-image: url('./Images/Projects/3/next.png');
+    background-position: 0%;
+    background-size: auto;
+  }
+  100%{
+    background-image: url('./Images/Projects/3/next.png');
+    background-position: 50%;
+    background-size: auto;
   }
 }
 
