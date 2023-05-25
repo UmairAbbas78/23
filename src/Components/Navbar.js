@@ -64,7 +64,7 @@ function Navbar() {
               Projects
             </MUILink>
           </ScrollLink>
-          <ScrollLink
+          {/* <ScrollLink
             to="contact"
             smooth={true}
             offset={100}
@@ -77,7 +77,7 @@ function Navbar() {
             >
               Contact
             </MUILink>
-          </ScrollLink>
+          </ScrollLink> */}
           <a href={Resume} target="_blank" rel="noreferrer">
             <Button variant="outlined">Resume</Button>
           </a>

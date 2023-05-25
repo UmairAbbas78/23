@@ -1,5 +1,5 @@
 import "./App.css";
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Navbar from "./Components/Navbar";
 import { Container } from "@mui/system";
 import Projects from "./Components/Projects";
@@ -69,8 +69,35 @@ function App() {
             <i className="fa-brands fa-linkedin"></i>
             <Typography>Linkedin</Typography>
           </a>
+          <a
+            id="profile-link"
+            href="https://okradev.itch.io/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-itch-io"></i>
+            <Typography>Itch.io</Typography>
+          </a>
         </div>
-        <div className="techstack"></div>
+        <div className="techstack">
+          <Typography sx={{ color: "#6c0faa", marginTop: "1em" }} variant="h4">
+            Tech Stack
+          </Typography>
+          <Box
+            display="flex"
+            justifyContent="center"
+            gap={5}
+            sx={{
+              fontSize: 40,
+              marginTop: 3,
+            }}
+          >
+            <i className="fa-brands fa-react" />
+            <i class="fa-brands fa-node-js"></i>
+            <i class="devicon-express-original"></i>
+            <i class="devicon-mongodb-plain"></i>
+          </Box>
+        </div>
       </Container>
       <Projects />
     </div>
