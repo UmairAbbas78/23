@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio23/static/css/main.a3f150fa.css",
-    "main.js": "/portfolio23/static/js/main.c204c2dc.js",
+    "main.js": "/portfolio23/static/js/main.9d2d15ca.js",
     "static/js/787.26c926d5.chunk.js": "/portfolio23/static/js/787.26c926d5.chunk.js",
+    "static/media/Resume_23.pdf": "/portfolio23/static/media/Resume_23.dbfe053439481acb14d9.pdf",
     "static/media/Project3.jpg": "/portfolio23/static/media/Project3.c0c92b5a19ccd9d2a670.jpg",
     "static/media/Project1.jpg": "/portfolio23/static/media/Project1.857644ac4fb525772b37.jpg",
     "static/media/Project2.jpg": "/portfolio23/static/media/Project2.7668ac611ba3efbf16a4.jpg",
-    "static/media/Resume_UmairAbbas_23.pdf": "/portfolio23/static/media/Resume_UmairAbbas_23.5bb7c03d93f1a37d2c8a.pdf",
     "static/media/MarkDown_full.png": "/portfolio23/static/media/MarkDown_full.68b8184a4e84975fc6be.png",
     "static/media/Full.png": "/portfolio23/static/media/Full.5399a1dadadbb6a5a8f2.png",
     "static/media/MarkDown_render.png": "/portfolio23/static/media/MarkDown_render.7b0243116f9bbaa30f8d.png",
@@ -16,11 +16,11 @@
     "static/media/next.png": "/portfolio23/static/media/next.2bd5167d577c71ae5e70.png",
     "index.html": "/portfolio23/index.html",
     "main.a3f150fa.css.map": "/portfolio23/static/css/main.a3f150fa.css.map",
-    "main.c204c2dc.js.map": "/portfolio23/static/js/main.c204c2dc.js.map",
+    "main.9d2d15ca.js.map": "/portfolio23/static/js/main.9d2d15ca.js.map",
     "787.26c926d5.chunk.js.map": "/portfolio23/static/js/787.26c926d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3f150fa.css",
-    "static/js/main.c204c2dc.js"
+    "static/js/main.9d2d15ca.js"
   ]
 }
