@@ -80,6 +80,7 @@ function App() {
           </a>
         </div>
         <div className="techstack">
+          {/*  */}
           <Typography sx={{ color: "#6c0faa", marginTop: "1em" }} variant="h4">
             Tech Stack
           </Typography>
