@@ -79,6 +79,7 @@ function App() {
             <Typography>Itch.io</Typography>
           </a>
         </div>
+        {/* random comment for commit */}
         <div className="techstack">
           <Typography sx={{ color: "#6c0faa", marginTop: "1em" }} variant="h4">
             Tech Stack
