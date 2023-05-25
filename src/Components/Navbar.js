@@ -9,7 +9,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 import { Link as ScrollLink } from "react-scroll";
-import Resume from "../Resume/Resume_UmairAbbas_23.pdf";
+import Resume from "../Resume/Resume_23.pdf";
 
 function Navbar() {
   const [navActive, setNavActive] = React.useState("");
