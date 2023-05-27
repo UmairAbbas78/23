@@ -134,11 +134,11 @@ a{
 }
 .socials{
   color:#6c0faa;
-  font-size: 4em;
+  font-size: 3em;
   display: flex;
   justify-content: center;
   text-decoration: none;
-  gap: 2em;
+  gap: 1.8em;
   margin-top: 0.5em;
 }
 
@@ -257,6 +257,16 @@ a{
     border-radius: 10px;
     box-shadow: 4px 5px 2px #6c0faa ;
   }
+
+  .socials{
+  color:#6c0faa;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  gap: 2em;
+  margin-top: 0.5em;
+}
 
 .project-container{
   width: auto;

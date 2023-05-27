@@ -101,7 +101,7 @@ function Navbar() {
               </Typography>
             </ListItem>
           </ScrollLink>
-          <ScrollLink to="contact" smooth={true}>
+          {/* <ScrollLink to="contact" smooth={true}>
             <ListItem>
               <Typography
                 sx={{ fontWeight: 500, fontSize: 18, color: "white" }}
@@ -109,7 +109,7 @@ function Navbar() {
                 Contact
               </Typography>
             </ListItem>
-          </ScrollLink>
+          </ScrollLink> */}
           <a href={Resume} target="_blank" rel="noreferrer">
             <Button
               variant="contained"
