@@ -1,0 +1,18 @@
+{
+  "techstack": [
+    { "name": "React" },
+    { "name": "Nodejs" },
+    { "name": "Expressjs" },
+    { "name": "MongoDB" },
+    { "name": "MySql" },
+    { "name": "phpMyAdmin" },
+    { "name": "Sequalize" },
+    { "name": "Material UI" }
+  ],
+  "tools": [
+    { "name": "Vs Code" },
+    { "name": "Postman" },
+    { "name": "Git" },
+    { "name": "GitHub" }
+  ]
+}

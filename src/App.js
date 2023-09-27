@@ -1,10 +1,36 @@
 import "./App.css";
-import { Box, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import Navbar from "./Components/Navbar";
 import { Container } from "@mui/system";
 import Projects from "./Components/Projects";
+import TechStackIcon from "./Components/TechStackIcon";
+import skills from "./Components/Additional/skills.json";
+import { FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
+import { BiLogoMongodb } from "react-icons/bi";
+import { TbBrandVscode } from "react-icons/tb";
+import { BsGit } from "react-icons/bs";
+import {
+  SiExpress,
+  SiMysql,
+  SiPhpmyadmin,
+  SiSequelize,
+  SiMui,
+  SiPostman,
+} from "react-icons/si";
 
 function App() {
+  const icons = [
+    <FaReact />,
+    <FaNodeJs />,
+    <SiExpress />,
+    <BiLogoMongodb />,
+    <SiMysql />,
+    <SiPhpmyadmin />,
+    <SiSequelize />,
+    <SiMui />,
+  ];
+  const toolIcons = [<TbBrandVscode />, <SiPostman />, <BsGit />, <FaGithub />];
+
   return (
     <div>
       <Navbar />
@@ -24,8 +50,7 @@ function App() {
           }}
           variant="h6"
         >
-          I love designing and developing user-friendly and creative web
-          experiences.
+          A Front-end Developer from Karachi Pakistan. 📍
         </Typography>
       </Container>
       <hr />
@@ -42,13 +67,11 @@ function App() {
             },
           }}
         >
-          A Front-end Developer from Karachi Pakistan. 📍
-          <br />
           I'm Computer Engineering graduate from FAST-NUCES Karachi.📖
           <br />
-          I'm an aspiring MERN Stack developer with a passion for software
-          engineering and a strong foundation in programming principles. I'm a
-          Hobbyist game developer, and I also have a knack for UI/UX design.
+          Full-Stack developer with a passion for software engineering and a
+          strong foundation in programming principles. I also have a knack for
+          UI/UX design.
         </Typography>
         <div className="socials">
           <a
@@ -79,10 +102,38 @@ function App() {
             <Typography>Itch.io</Typography>
           </a>
         </div>
-        <div className="techstack">
+        <Divider />
+        <Box>
           {/*  */}
           <Typography sx={{ color: "#6c0faa", marginTop: "1em" }} variant="h4">
             Tech Stack
+          </Typography>
+          <Box
+            sx={{
+              fontSize: 40,
+              mt: 3,
+              display: "flex",
+              justifyContent: "center",
+              gap: 5,
+              "@media screen and (max-width:850px)": {
+                fontSize: "30px",
+                display: "grid",
+                gridTemplateColumns: "repeat(4,2fr)",
+                columnGap: 0,
+                rowGap: 4,
+              },
+            }}
+          >
+            {skills.techstack.map((item, idx) => {
+              return <TechStackIcon title={item.name} icon={icons[idx]} />;
+            })}
+          </Box>
+        </Box>
+        <Divider />
+        <Box>
+          {/*  */}
+          <Typography sx={{ color: "#6c0faa", marginTop: "1em" }} variant="h4">
+            Tools
           </Typography>
           <Box
             display="flex"
@@ -90,15 +141,14 @@ function App() {
             gap={5}
             sx={{
               fontSize: 40,
-              marginTop: 3,
+              mt: 3,
             }}
           >
-            <i className="fa-brands fa-react" />
-            <i class="fa-brands fa-node-js"></i>
-            <i class="devicon-express-original"></i>
-            <i class="devicon-mongodb-plain"></i>
+            {skills.tools.map((item, idx) => {
+              return <TechStackIcon title={item.name} icon={toolIcons[idx]} />;
+            })}
           </Box>
-        </div>
+        </Box>
       </Container>
       <Projects />
     </div>
